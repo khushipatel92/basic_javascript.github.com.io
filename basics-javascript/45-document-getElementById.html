@@ -1,0 +1,26 @@
+<!-- 
+    
+    The getElementById() is a JavaScript function that lets you grab an HTML element, by its id , and perform an 
+    action on it. The name of the id is passed as a parameter, and ​the corresponding element is the return value.
+    
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function changeColor(newColor) {
+  const elem = document.getElementById("demo");
+  elem.style.color = newColor;
+}
+
+    </script>
+ </head>
+ <body>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint suscipit quos porro inventore officiis, sapiente quo laboriosam adipisci laudantium repellendus consequuntur dignissimos praesentium mollitia aliquid nesciunt animi accusamus. Neque, provident!</p>
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
+ </body>
+ </html>
